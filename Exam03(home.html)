@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>우리는 성우쌤반 학생입니다.</h1>
+
+    <form action="http://172.30.1.58:5028/add" method="post">
+    
+        <input type="text" name="num1">
+        <input type="text" name="num2">
+        <input type="submit" value="전송">
+
+    </form>
+
+    <form action="http://172.30.1.58:5028/move">
+
+        <input type="text" name="url">
+        <input type="submit" value ="주소 이동">
+
+    </form>
+
+    <form action="http://172.30.1.58:5028/detect"
+        method="post"
+        enctype="multipart/form-data">
+
+        <input type="file" name="file">
+        <input type="submit" value ="얼굴 분석">
+
+    </form>
+
+    <form action="http://172.30.1.58:5028/compare"
+    method="post"
+    enctype="multipart/form-data">
+
+    <input type="file" name="file">
+    <input type="submit" value ="얼굴 비교">
+
+    </form>
+
+    <form action="http://172.30.1.58:5028/celeb"
+        method="post"
+        enctype="multipart/form-data">
+
+        <input type="file" name="file">
+        <input type="submit" value ="닮은 연예인 찾기">
+
+    </form>
+</body>
+</html>
