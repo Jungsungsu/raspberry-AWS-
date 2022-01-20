@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{background-color:red;}
+        .blue{background-color:blue;}
+        .green{background-color:green;}
+        .black{background-color:black;}
+    </style>
+</head>
+<body>
+    <script>
+        function naver() {
+            window.location.href='https://www.naver.com'
+        }
+        function google() {
+            window.location.href='https://www.google.com'
+        }
+        function daum() {
+            window.location.href='https://www.daum.net'
+        }   
+    </script>
+    <!-- Server 실행 : ALT + L + O -->
+
+    <input class="red" type="button" value="Home" onclick="home()">
+    <input class="blue" type="button" value="네이버" onclick="naver()">
+    <input class="green" type="button" value="구글" onclick="google()">
+    <input class="black" type="button" value="다음" onclick="daum()">
+    
+</body>
+</html>
